@@ -1,0 +1,116 @@
+body {
+    background-image: url("myHackingGif.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Rubik Glitch", serif;
+    padding: 20px;
+}
+
+.main-container {
+    background-image: url("back.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: green;
+}
+
+.input {
+    margin-bottom: 15px;
+}
+
+.input label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    background-color: #151616;
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.input input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    color: green;
+    background-color: #121313;
+    border: 2px solid green;
+    border-radius: 4px;
+}
+
+button {
+    background-color: rgb(47, 193, 51);
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(36, 160, 40);
+}
+
+#output {
+    font-size: 20px;
+    margin-top: 20px;
+    word-wrap: break-word;
+}
+
+/* I have used this media queries in order to fix it with tablets and small laptops. */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #output {
+        font-size: 18px;
+    }
+}
+
+/* I have used this medai queries in order to fix the web in mobiles. */
+@media (max-width: 480px) {
+    .main-container {
+        padding: 10px;
+    }
+
+    .input label {
+        font-size: 16px;
+    }
+
+    .input input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    #output {
+        font-size: 16px;
+    }
+}
